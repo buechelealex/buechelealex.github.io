@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alex Büchele</title>
+<link rel="icon" type="image/x-icon" href="https://github.com/buechelealex.png">
+<style>
+  :root {
+    --bg: #0d1117;
+    --bg-elevated: #161b22;
+    --border: #30363d;
+    --text: #e6edf3;
+    --text-muted: #8b949e;
+    --accent: #58a6ff;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+  }
+
+  main {
+    width: 100%;
+    max-width: 640px;
+  }
+
+  .card {
+    background: var(--bg-elevated);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 48px 40px;
+  }
+
+  h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 0 0 8px 0;
+    letter-spacing: -0.02em;
+  }
+
+  .subtitle {
+    color: var(--text-muted);
+    font-size: 1rem;
+    margin: 0 0 32px 0;
+  }
+
+  section {
+    margin-bottom: 32px;
+  }
+
+  section:last-of-type {
+    margin-bottom: 0;
+  }
+
+  h2 {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--text-muted);
+    font-weight: 600;
+    margin: 0 0 14px 0;
+  }
+
+  .avatar {
+    display: block;
+    width: 88px;
+    height: 88px;
+    border-radius: 50%;
+    border: 2px solid var(--border);
+    margin-bottom: 20px;
+  }
+
+  .bio {
+    color: var(--text);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  .badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+
+  .project {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 16px;
+  }
+
+  .project h3 {
+    margin: 0 0 6px 0;
+    font-size: 0.95rem;
+    font-weight: 600;
+  }
+
+  .project p {
+    margin: 0;
+    color: var(--text-muted);
+    font-size: 0.82rem;
+    line-height: 1.5;
+  }
+
+  @media (max-width: 480px) {
+    .projects {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 14px;
+    background: rgba(88, 166, 255, 0.1);
+    border: 1px solid rgba(88, 166, 255, 0.25);
+    color: var(--accent);
+    border-radius: 999px;
+    font-size: 0.85rem;
+    font-weight: 500;
+  }
+
+  .links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .links a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 16px;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    color: var(--text);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: border-color 0.15s ease, color 0.15s ease;
+  }
+
+  .links a:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+  }
+
+  .links svg {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+  }
+  .project a {
+    color: var(--accent);
+  }
+
+  footer {
+    text-align: center;
+    margin-top: 24px;
+    color: var(--text-muted);
+    font-size: 0.8rem;
+  }
+</style>
+</head>
+<body>
+<main>
+  <div class="card">
+    <img class="avatar" src="https://github.com/buechelealex.png" alt="Alex Büchele">
+    <h1>Alex Büchele</h1>
+    <p class="subtitle">Willkommen auf meiner GitHub-Profilseite.</p>
+
+    <section>
+      <h2>Über mich</h2>
+      <p class="bio">Ich bin Schüler und interessiere mich für Automatisierung &amp; Scripting, Java-Programme sowie Netzwerke, ihre Topologie und Struktur. Hier sammle ich meine Projekte und Experimente rund ums Programmieren.</p>
+    </section>
+
+    <section>
+      <h2>Skills</h2>
+      <div class="badges">
+        <span class="badge">Python</span>
+        <span class="badge">Java</span>
+        <span class="badge">Git</span>
+        <span class="badge">Bash</span>
+        <span class="badge">Netzwerkadministration</span>
+      </div>
+    </section>
+
+    <section>
+      <h2>Projekte</h2>
+      <div class="projects">
+        <div class="project">
+          <a href="https://buechelealex.github.io/cocktail-tracker/">
+          <h3>Cocktail-Tracker</h3>
+          </a>
+          <p>Simple Website zur Bewertung von Cocktails.</p>
+        </div>
+        <div class="project">
+          <a href="https://github.com/buechelealex/coordinate-saver-fabric">
+          <h3>Fabricmc Server-Sided Waypoints</h3>
+          </a>
+          <p>Waypoints-Mod für Minecraft, die Serverseitig läuft</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Kontakt</h2>
+      <div class="links">
+        <a href="https://github.com/buechelealex" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+          GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/alex-büchele-5b8b44296" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 380 380" fill="currentColor" ><path d="M347.445,0H34.555C15.471,0,0,15.471,0,34.555v312.889C0,366.529,15.471,382,34.555,382h312.889
+	C366.529,382,382,366.529,382,347.444V34.555C382,15.471,366.529,0,347.445,0z M118.207,329.844c0,5.554-4.502,10.056-10.056,10.056
+	H65.345c-5.554,0-10.056-4.502-10.056-10.056V150.403c0-5.554,4.502-10.056,10.056-10.056h42.806
+	c5.554,0,10.056,4.502,10.056,10.056V329.844z M86.748,123.432c-22.459,0-40.666-18.207-40.666-40.666S64.289,42.1,86.748,42.1
+	s40.666,18.207,40.666,40.666S109.208,123.432,86.748,123.432z M341.91,330.654c0,5.106-4.14,9.246-9.246,9.246H286.73
+	c-5.106,0-9.246-4.14-9.246-9.246v-84.168c0-12.556,3.683-55.021-32.813-55.021c-28.309,0-34.051,29.066-35.204,42.11v97.079
+	c0,5.106-4.139,9.246-9.246,9.246h-44.426c-5.106,0-9.246-4.14-9.246-9.246V149.593c0-5.106,4.14-9.246,9.246-9.246h44.426
+	c5.106,0,9.246,4.14,9.246,9.246v15.655c10.497-15.753,26.097-27.912,59.312-27.912c73.552,0,73.131,68.716,73.131,106.472
+	L341.91,330.654L341.91,330.654z"/></svg>
+          LinkedIn
+        </a>
+        <a href="mailto:alexanderbuechele.developement@gmail.com">
+          <svg viewBox="0 0 16 16" fill="currentColor"><path d="M1.75 2h12.5c.97 0 1.75.78 1.75 1.75v8.5A1.75 1.75 0 0 1 14.25 14H1.75A1.75 1.75 0 0 1 0 12.25v-8.5C0 2.78.78 2 1.75 2ZM1.5 3.87v8.38c0 .14.11.25.25.25h12.5a.25.25 0 0 0 .25-.25V3.87l-6.36 4.24a.75.75 0 0 1-.83 0L1.5 3.87Zm12.72-1.37H1.78L8 6.68l6.22-4.18Z"/></svg>
+          E-Mail
+        </a>
+      </div>
+    </section>
+  </div>
+  <footer>&copy; 2026 Alex Büchele</footer>
+</main>
+</body>
+</html>

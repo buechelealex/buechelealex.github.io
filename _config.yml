@@ -1,0 +1,6 @@
+title: "Meine Projekte"
+description: "Übersicht meiner Projekte"
+url: "https://projects.abuechele.de"
+
+plugins:
+  - jekyll-sitemap

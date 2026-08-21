@@ -6,4 +6,8 @@
   <sitemap>
     <loc>https://projects.abuechele.de/cocktail-tracker/sitemap.xml</loc>
   </sitemap>
+  <sitemap>
+    <loc>https://projects.abuechele.de/impressum/sitemap.xml</loc>
+  </sitemap>
+
 </sitemapindex>

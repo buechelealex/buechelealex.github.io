@@ -4,3 +4,8 @@ url: "https://projects.abuechele.de"
 
 plugins:
   - jekyll-sitemap
+
+# Jekyll ignoriert Ordner, die mit einem Punkt beginnen. Ohne diese Zeile
+# landet .well-known/assetlinks.json nicht auf der Seite und Android kann
+# die TWA-App nicht als zu dieser Domain gehoerig verifizieren.
+include: [".well-known"]
